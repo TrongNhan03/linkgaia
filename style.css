@@ -1,0 +1,60 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    background-color: aqua;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 20px;
+    transition: font-size 2s;
+}
+button {
+    margin-top: 10px;
+    width: 100px;
+    border: none;
+    background: none;
+    text-decoration: underline double rgb(7, 7, 7);
+    font-size: 17px;
+    transition: text-decoration 1s;
+}
+#popular {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+a:hover {
+    font-size: 20px;
+    outline: 2px solid rgb(3, 175, 249);
+    outline-offset: 3px;      
+}
+a:active {
+    transform: rotate(10deg)
+}
+#more {
+    display: none;
+    gap:10px;
+    flex-wrap: wrap;
+}
+button:hover {
+    text-decoration: underline overline rgb(56, 102, 218);
+}
+
+
+
+
+
