@@ -6,7 +6,7 @@ let inputpass=document.getElementsByTagName('input')[0]
 
 inputpass.focus()
 btnconfirm.onclick=()=>{
-    if(inputpass.value == 'kythuat123') {
+    if(inputpass.value == 'g') {
         document.getElementById('permission').style.display='none'
         btn.style.display='block';
         popular.style.display='flex';
