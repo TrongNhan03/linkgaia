@@ -21,7 +21,8 @@ a {
     border-radius: 20px;
     transition: font-size 2s;
 }
-button {
+#btnMore {
+    display: none;
     margin-top: 10px;
     width: 100px;
     border: none;
@@ -31,7 +32,7 @@ button {
     transition: text-decoration 1s;
 }
 #popular {
-    display: flex;
+    display: none;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
@@ -50,9 +51,90 @@ a:active {
     gap:10px;
     flex-wrap: wrap;
 }
-button:hover {
+#btnMore:hover {
     text-decoration: underline overline rgb(56, 102, 218);
 }
+
+#confirm {
+    display: block;
+
+}
+input {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+#permission {
+    position: fixed;
+    top: 30%;
+    width: 70%;
+
+}
+
+
+
+#confirm {
+    position: relative;
+    height: 50px;
+    padding: 0 30px;
+    border: 2px solid #000;
+    background: #e8e8e8;
+    user-select: none;
+    white-space: nowrap;
+    transition: all .05s linear;
+    font-family: inherit;
+    margin: auto;
+   }
+   
+   #confirm:before, #confirm:after {
+    content: "";
+    position: absolute;
+    background: #e8e8e8;
+    transition: all .2s linear;
+   }
+   
+   #confirm:before {
+    width: calc(100% + 6px);
+    height: calc(100% - 16px);
+    top: 8px;
+    left: -3px;
+   }
+   
+   #confirm:after {
+    width: calc(100% - 16px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: 8px;
+   }
+   
+   #confirm:hover {
+    cursor: crosshair;
+   }
+   
+   #confirm:active {
+    transform: scale(0.95);
+   }
+   
+   #confirm:hover:before {
+    height: calc(100% - 32px);
+    top: 16px;
+   }
+   
+   #confirm:hover:after {
+    width: calc(100% - 32px);
+    left: 16px;
+   }
+   
+   #confirm span {
+    font-size: 15px;
+    z-index: 3;
+    position: relative;
+    font-weight: 600;
+   }
 
 
 
