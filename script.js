@@ -10,6 +10,8 @@ btnconfirm.onclick=()=>{
         document.getElementById('permission').style.display='none'
         btn.style.display='block';
         popular.style.display='flex';
+        document.getElementsByTagName('p')[0].style.display='block'
+        document.getElementsByTagName('p')[1].style.display='block'
         document.getElementsByTagName('body')[0].addEventListener('keydown',(e)=>{
             if(e.key=='1') {
                 document.querySelectorAll('#popular>a')[0].click();

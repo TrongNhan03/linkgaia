@@ -135,6 +135,11 @@ input {
     position: relative;
     font-weight: 600;
    }
+   #hint {
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+   }
 
 
 
